@@ -11,7 +11,7 @@
             $.post('https://icu-tech-proxy.vercel.app/api/users',
                 { func: 'Login', params: $('form[name=login]').serialize() },
                 function (data) {
-                    console.log(data
+                    console.log(data);
                     //console.log(data.ret);
                 }, 'json');
 
