@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'self' http://isapi.mekashron.com/">
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'self' https://icu-tech-proxy.vercel.app/api/">
 
     <link href="/css/bootstrap.css" rel="stylesheet">
     <script src="/js/jquery.js" type="text/javascript"></script>
@@ -11,7 +11,7 @@
             $.post('https://icu-tech-proxy.vercel.app/api/users',
                 { func: 'Login', params: $('form[name=login]').serialize() },
                 function (data) {
-                    console.log(data);
+                    console.log(data
                     //console.log(data.ret);
                 }, 'json');
 
